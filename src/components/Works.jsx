@@ -23,7 +23,10 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link}) =>{
 
 <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
 <div className='black-gradient rounded-full w-10 h-10 flex justify-center items-center cursor-pointer'>
-<img src={github} alt="github" className='w-1/2 h-1/2 object-contain'/>
+<a href={source_code_link} target='_blank'>
+<img src={github} alt="github" className='h-1/2'/>
+</a>
+
 
 </div>
 
